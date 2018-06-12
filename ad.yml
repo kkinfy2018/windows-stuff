@@ -1,0 +1,8 @@
+---
+
+- name: Apply role to Windows host group
+  hosts: windows
+  vars_files:
+    - /etc/ansible/roles/win_ad_install/vars/my_ad_vars.yml
+  roles:
+    - win_ad_install
